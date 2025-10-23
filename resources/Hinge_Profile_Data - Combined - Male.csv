@@ -1,0 +1,500 @@
+Sl. no.,Name,Age,Gender,Height,Ethnicity,Height_CM,Age-Group
+1,Curtis,18,Male,5'11'',White,180.34,18-22
+2,Thomas,19,Male,5'11'',White,180.34,18-22
+3,Brent,18,Male,6'00'',White,182.88,18-22
+4,Nicholas,20,Male,5'5'',White,165.1,18-22
+5,Alex,18,Male,5'11'',White,180.34,18-22
+6,Ben,19,Male,6'0'',White,182.88,18-22
+7,Thomas,20,Male,6'2'',White,187.96,18-22
+8,Stellan,21,Male,6'1'',White,185.42,18-22
+9,Fred,20,Male,6'0'',White,182.88,18-22
+10,Robbie,22,Male,5'9'',White,175.26,18-22
+11,Sean,22,Male,5'9'',White,175.26,18-22
+12,Noah,18,Male,6'2'',White,187.96,18-22
+13,Allen,19,Male,5'11'',White,180.34,18-22
+14,Connor,21,Male,6'2'',White,187.96,18-22
+15,Johnny,19,Male,5'10'',White,177.8,18-22
+16,Brian,21,Male,6'2'',White,187.96,18-22
+17,Ethan,21,Male,6'1'',White,185.42,18-22
+18,Liam,19,Male,6'0'',White,182.88,18-22
+19,Alec,19,Male,6'1'',White,185.42,18-22
+20,Gavin,22,Male,6'3'',White,190.5,18-22
+21,Cameron,22,Male,6'2'',White,187.96,18-22
+22,Luca ,21,Male,5'10'',White,177.8,18-22
+23,Owen,21,Male,6'2'',White,187.96,18-22
+24,Tanner,22,Male,6'4'',White,193.04,18-22
+25,Lisi,22,Male,6'1'',White,185.42,18-22
+26,Charlie,19,Male,6'4'',White,193.04,18-22
+27,Tohir,20,Male,5'10'',White,177.8,18-22
+28,Sebastien,19,Male,5'10'',White,177.8,18-22
+29,Patrick,20,Male,6'0'',White,182.88,18-22
+30,Joel,22,Male,6'0'',White,182.88,18-22
+31,Elliot,21,Male,6'66'',White,350.52,18-22
+32,Nick,22,Male,5'10'',White,177.8,18-22
+33,Nolan,21,Male,5'9'',White,175.26,18-22
+34,Andrew,19,Male,5'8'',White,172.72,18-22
+35,Adam,21,Male,5'11'',White,180.34,18-22
+36,Sebestian,21,Male,6'2'',White,187.96,18-22
+37,Luke,19,Male,6'1'',White,185.42,18-22
+38,Jack,20,Male,6'0'',White,182.88,18-22
+39,Michael,22,Male,6'0'',White,182.88,18-22
+40,Wolfie,19,Male,6'0'',White,182.88,18-22
+41,Nathan,21,Male,6'0'',White,182.88,18-22
+42,Rado,20,Male,6'1'',White,185.42,18-22
+43,James,22,Male,5'11'',White,180.34,18-22
+44,Tyson,19,Male,6'4'',White,193.04,18-22
+45,Cortland,22,Male,6'3'',White,190.5,18-22
+46,Michael,22,Male,6'2'',White,187.96,18-22
+47,Sonny,19,Male,6'0'',White,182.88,18-22
+48,Santino,19,Male,6'0'',White,182.88,18-22
+49,Jayden,20,Male,6'1'',White,185.42,18-22
+50,Josh,19,Male,5'11'',White,180.34,18-22
+51,Cesar,19,Male,6'0'',Black,182.88,18-22
+52,Jayden,18,Male,6'1'',Black,185.42,18-22
+53,Nicholas,20,Male,6'0'',Black,182.88,18-22
+54,Akeem,20,Male,6'0'',Black,182.88,18-22
+55,Trey,20,Male,6'4'',Black,193.04,18-22
+56,Liam,19,Male,6'0'',Black,182.88,18-22
+57,Cory,20,Male,5'10'',Black,177.8,18-22
+58,Darius,21,Male,6'4'',Black,193.04,18-22
+59,Tayo,21,Male,6'3'',Black,190.5,18-22
+60,Caleb,18,Male,6'4'',Black,193.04,18-22
+61,Mizell,22,Male,6'1'',Black,185.42,18-22
+62,Chase,20,Male,6'0'',Black,182.88,18-22
+63,Nick,18,Male,5'10'',Black,177.8,18-22
+64,Shandres,21,Male,6'6'',Black,198.12,18-22
+65,Tony,22,Male,6'2'',Black,187.96,18-22
+66,Carlos,20,Male,5'8'',Hispanic,172.72,18-22
+67,Sebastian ,20,Male,5'11'',Hispanic,180.34,18-22
+68,Daniel,20,Male,5'5'',Hispanic,165.1,18-22
+69,Chris,19,Male,5'9'',Hispanic,175.26,18-22
+70,Carlos,22,Male,6'1'',Hispanic,185.42,18-22
+71,Nelson,21,Male,5'11'',Hispanic,180.34,18-22
+72,Spencer,21,Male,5'8'',Hispanic,172.72,18-22
+73,Theo,20,Male,6'1'',Hispanic,185.42,18-22
+74,JJ,21,Male,5'4'',Hispanic,162.56,18-22
+75,Lucas ,21,Male,5'9'',Hispanic,175.26,18-22
+76,Juan,19,Male,5'11'',Hispanic,180.34,18-22
+77,Jayden,20,Male,6'1'',Hispanic,185.42,18-22
+78,Noel,18,Male,5'9'',Hispanic,175.26,18-22
+79,Aidan,20,Male,5'10'',Hispanic,177.8,18-22
+80,Marco,21,Male,6'0'',Hispanic,182.88,18-22
+81,Jo,22,Male,6'2'',East Asian ,187.96,18-22
+82,Kevin,20,Male,6'0'',East Asian ,182.88,18-22
+83,Danny ,22,Male,5'8'',East Asian ,172.72,18-22
+84,John ,19,Male,6'0'',East Asian ,182.88,18-22
+85,Andrew,22,Male,6'1'',East Asian ,185.42,18-22
+86,Sam ,22,Male,5'10'',East Asian ,177.8,18-22
+87,Varun,21,Male,5'7'',South Asian,170.18,18-22
+88,Aaron ,19,Male,5'11'',East Asian ,180.34,18-22
+89,Julius,22,Male,3'00'',Hispanic,91.44,18-22
+90,Endingburgh,21,Male,6'1'',East Asian ,185.42,18-22
+91,Zhongbo,22,Male,5'11'',East Asian ,180.34,18-22
+92,Ty,22,Male,6'2'',East Asian ,187.96,18-22
+93,Ace,22,Male,6'4'',Hispanic,193.04,18-22
+94,Hudson,20,Male,5'11'',East Asian ,180.34,18-22
+95,Jayden,21,Male,6'1'',East Asian ,185.42,18-22
+96,Andy,21,Male,5'9'',East Asian ,175.26,18-22
+97,Alex Choi,19,Male,5'10'',East Asian ,177.8,18-22
+98,Andy,20,Male,6'3'',East Asian ,190.5,18-22
+99,Gio,18,Male,5'9'',South Asian,175.26,18-22
+100,Matthew,22,Male,5'8'',Hispanic,172.72,18-22
+1,Nick,25,Male,6'3'',White,190.5,23-28
+2,Charlie,23,Male,6'0'',White,182.88,23-28
+3,Michael,27,Male,5'9'',White,175.26,23-28
+4,Taylor,24,Male,5'6'',White,167.64,23-28
+5,David,27,Male,5'8'',White,172.72,23-28
+6,Andrew,27,Male,5'11'',White,180.34,23-28
+7,Cole,24,Male,6'1'',White,185.42,23-28
+8,Gabe,27,Male,5'11'',White,180.34,23-28
+9,Ajani,25,Male,6'5'',White,195.58,23-28
+10,Aidan,25,Male,6'2'',White,187.96,23-28
+11,Ari,23,Male,5'11'',White,180.34,23-28
+12,Isaac,24,Male,6'3'',White,190.5,23-28
+13,Ben,24,Male,5'10'',White,177.8,23-28
+14,Rich ,26,Male,6'3'',White,190.5,23-28
+15,Jelle,23,Male,6'4'',White,193.04,23-28
+16,Aidan,27,Male,6'2'',White,187.96,23-28
+17,Greg,24,Male,6'2'',White,187.96,23-28
+18,Joe,27,Male,5'9'',White,175.26,23-28
+19,Tristan,26,Male,6'3'',White,190.5,23-28
+20,Matt,23,Male,6'1'',White,185.42,23-28
+21,Trevor,24,Male,5'10'',White,177.8,23-28
+22,Sam,25,Male,5'6'',White,167.64,23-28
+23,Corey,24,Male,5'11'',White,180.34,23-28
+24,Eli,26,Male,6'4'',White,193.04,23-28
+25,David,26,Male,6'2'',White,187.96,23-28
+26,John ,24,Male,6'0'',White,182.88,23-28
+27,James,23,Male,6'3'',White,190.5,23-28
+28,Charlie,26,Male,6'0'',White,182.88,23-28
+29,Jon,26,Male,5'10'',White,177.8,23-28
+30,Shaun,26,Male,6'3'',White,190.5,23-28
+31,Ray,26,Male,5'10'',White,177.8,23-28
+32,Tyler,24,Male,6'0'',White,182.88,23-28
+33,Richard,26,Male,6'3'',White,190.5,23-28
+34,Gabriel,26,Male,6'2'',White,187.96,23-28
+35,Lisle,23,Male,6'3'',White,190.5,23-28
+36,James,23,Male,6'3'',White,190.5,23-28
+37,Daniel,26,Male,6'0'',White,182.88,23-28
+38,Bernado,24,Male,5'10'',White,177.8,23-28
+39,Tyler,23,Male,5'10'',White,177.8,23-28
+40,Lucas,23,Male,6'2'',White,187.96,23-28
+41,Danny,26,Male,6'0'',White,182.88,23-28
+42,Lewis,26,Male,5'11'',White,180.34,23-28
+43,Seamus,24,Male,6'0'',White,182.88,23-28
+44,Luke,23,Male,5'9'',White,175.26,23-28
+45,Dankiel,26,Male,6'1'',White,185.42,23-28
+46,Noah,26,Male,6'0'',White,182.88,23-28
+47,Adam,24,Male,6'5'',White,195.58,23-28
+48,Zack,24,Male,5'9'',White,175.26,23-28
+49,Andrew,26,Male,5'10'',White,177.8,23-28
+50,Tye,26,Male,5'11'',Black,180.34,23-28
+51,Isaiah,26,Male,5'8'',Black,172.72,23-28
+52,Nick,24,Male,6'2'',Black,187.96,23-28
+53,Fernando,24,Male,5'11'',Black,180.34,23-28
+54,Cam,23,Male,6'5'',Black,195.58,23-28
+55,James,24,Male,6'1'',Black,185.42,23-28
+56,Nick,25,Male,6'1'',Black,185.42,23-28
+57,Adrain,23,Male,5'11'',Black,180.34,23-28
+58,Jeremiah,24,Male,5'10'',Black,177.8,23-28
+59,Brandon,23,Male,6'4'',Black,193.04,23-28
+60,Rah,24,Male,6'2'',Black,187.96,23-28
+61,Terrell,24,Male,5'7'',Black,170.18,23-28
+62,Jalen,26,Male,5'11'',Black,180.34,23-28
+63,Eli,24,Male,6'4'',Black,193.04,23-28
+64,Omar,26,Male,6'4'',Black,193.04,23-28
+65,Alex,23,Male,5'7'',Hispanic,170.18,23-28
+66,Dylan,27,Male,6'2'',Hispanic,187.96,23-28
+67,Christopher,25,Male,5'9'',Hispanic,175.26,23-28
+68,Julian ,23,Male,5'5'',Hispanic,165.1,23-28
+69,Darby,24,Male,5'7'',Hispanic,170.18,23-28
+70,Luis,26,Male,6'0'',Hispanic,182.88,23-28
+71,John ,23,Male,5'10'',Hispanic,177.8,23-28
+72,Alden,23,Male,6'0'',Hispanic,182.88,23-28
+73,Marc,25,Male,5'6'',Hispanic,167.64,23-28
+74,Ervin,24,Male,5'9'',Hispanic,175.26,23-28
+75,Ray,24,Male,6'0'',Hispanic,182.88,23-28
+76,Manuel,23,Male,5'7'',Hispanic,170.18,23-28
+77,Andres,25,Male,5'11'',Hispanic,180.34,23-28
+78,Sam,27,Male,5'10'',Hispanic,177.8,23-28
+79,Artur,23,Male,5'11'',Hispanic,180.34,23-28
+80,Dayne,27,Male,5'8'',East Asian ,172.72,23-28
+81,Gopal,25,Male,5'5'',Southeast Asia ,165.1,23-28
+82,Shubhankar,26,Male,5'10'',South Asian ,177.8,23-28
+83,Kang ,26,Male,5'10'',East Asian ,177.8,23-28
+84,Nikhil,23,Male,5'11'',South Asian ,180.34,23-28
+85,Brandon,24,Male,5'10'',East Asian ,177.8,23-28
+86,Eric,23,Male,6'2'',East Asian ,187.96,23-28
+87,Steve,24,Male,6'0'',East Asian ,182.88,23-28
+88,Ayush,24,Male,5'11'',South Asian ,180.34,23-28
+89,Michael,25,Male,5'10'',East Asian ,177.8,23-28
+90,Porus,26,Male,6'2'',South Asian ,187.96,23-28
+91,Harry,23,Male,5'9'',Southeast Asia ,175.26,23-28
+92,Nikhil,26,Male,6'0'',South Asian ,182.88,23-28
+93,Chris ,27,Male,5'10'',East Asian ,177.8,23-28
+94,Aryan,23,Male,6'3'',South Asian ,190.5,23-28
+95,Mike,25,Male,5'10'',East Asian ,177.8,23-28
+96,Ry,24,Male,5'11'',East Asian ,180.34,23-28
+97,Daniel,23,Male,5'10'',East Asian ,177.8,23-28
+98,Alix,24,Male,6'1'',East Asian ,185.42,23-28
+99,Wanyu,26,Male,5'10'',East Asian ,177.8,23-28
+1,David,29,Male,5'8'',White,172.72,29-33
+2,Mat,30,Male,5'9'',White,175.26,29-33
+3,Joe,29,Male,5'10'',White,177.8,29-33
+4,Christian,29,Male,5'10'',White,177.8,29-33
+5,Mark ,31,Male,6'4'',White,193.04,29-33
+6,Thomas,29,Male,6'0'',White,182.88,29-33
+7,Ryan,29,Male,5'10'',White,177.8,29-33
+8,Jay,32,Male,5'9'',White,175.26,29-33
+9,Felix,31,Male,5'5'',White,165.1,29-33
+10,Luca,30,Male,5'9'',White,175.26,29-33
+11,Nicolo,30,Male,6'3'',White,190.5,29-33
+12,Evan,29,Male,6'0'',White,182.88,29-33
+13,Emir,30,Male,5'10'',White,177.8,29-33
+14,Daniel,29,Male,5'11'',White,180.34,29-33
+15,Aaron,30,Male,5'11'',White,180.34,29-33
+16,Bredan,32,Male,5'10'',White,177.8,29-33
+17,John,32,Male,5'8'',White,172.72,29-33
+18,Kamil,30,Male,6'1'',White,185.42,29-33
+19,Filip,30,Male,6'3'',White,190.5,29-33
+20,Herbet,31,Male,6'2'',White,187.96,29-33
+21,Sami,32,Male,5'10'',White,177.8,29-33
+22,Ryan,30,Male,5'10'',White,177.8,29-33
+23,Alex,32,Male,6'2'',White,187.96,29-33
+24,Roland,32,Male,5'7'',White,170.18,29-33
+25,Yuri,32,Male,6'0'',White,182.88,29-33
+26,Joseph,29,Male,5'8'',White,172.72,29-33
+27,Austin,29,Male,5'8'',White,172.72,29-33
+28,Igor,32,Male,5'7'',White,170.18,29-33
+29,Dan ,32,Male,5'10'',White,177.8,29-33
+30,Nicholas,30,Male,6'0'',White,182.88,29-33
+31,Tony,31,Male,5'11'',White,180.34,29-33
+32,Kevin,31,Male,5'7'',White,170.18,29-33
+33,Chris ,29,Male,6'1'',White,185.42,29-33
+34,Alex,31,Male,6'1'',White,185.42,29-33
+35,Suheyb,32,Male,5'8'',White,172.72,29-33
+36,Rob,31,Male,6'0'',White,182.88,29-33
+37,Jordan,32,Male,5'10'',White,177.8,29-33
+38,Scott,32,Male,5'9'',White,175.26,29-33
+39,Jake,31,Male,5'10'',White,177.8,29-33
+40,Omar,29,Male,5'9'',White,175.26,29-33
+41,Ryan,30,Male,5'11'',White,180.34,29-33
+42,Daniel,31,Male,6'0'',White,182.88,29-33
+43,Gui,32,Male,5'10'',White,177.8,29-33
+44,A,32,Male,6'0'',White,182.88,29-33
+45,David,29,Male,5'9'',White,175.26,29-33
+46,Johnny,29,Male,5'10'',White,177.8,29-33
+47,Ray,29,Male,5'11'',White,180.34,29-33
+48,Omar,30,Male,5'10'',White,177.8,29-33
+49,Billy,31,Male,5'5'',White,165.1,29-33
+50,Arthur,31,Male,5'11'',White,180.34,29-33
+51,Tony,32,Male,6'0'',Black ,182.88,29-33
+52,Norman,29,Male,6'0'',Black ,182.88,29-33
+53,Roland,31,Male,5'10'',Black ,177.8,29-33
+54,Saafir,30,Male,6'0'',Black ,182.88,29-33
+55,Kool,32,Male,5'10'',Black ,177.8,29-33
+56,Jonathan,29,Male,5'5'',Black ,165.1,29-33
+57,Adisa,29,Male,6'5'',Black ,195.58,29-33
+58,Jamal,31,Male,5'9'',Black ,175.26,29-33
+59,Solomon,30,Male,6'7'',Black ,200.66,29-33
+60,Trystan,29,Male,5'11'',Black ,180.34,29-33
+61,Stephen,29,Male,5'10'',Black ,177.8,29-33
+62,Ayoug,32,Male,6'5'',Black ,195.58,29-33
+63,Dee,32,Male,6'0'',Black ,182.88,29-33
+64,Dammy,30,Male,6'0'',Black ,182.88,29-33
+65,O ,31,Male,6'0'',Black ,182.88,29-33
+66,Matheus,31,Male,5'7'',Hispanic,170.18,29-33
+67,Melo,29,Male,6'1'',Hispanic,185.42,29-33
+68,Pablo,31,Male,5'9'',Hispanic,175.26,29-33
+69,Carlos,29,Male,5'10'',Hispanic,177.8,29-33
+70,Irvin,32,Male,5'5'',Hispanic,165.1,29-33
+71,Brian,29,Male,6'3'',Hispanic,190.5,29-33
+72,Wil,31,Male,6'2'',Hispanic,187.96,29-33
+73,Angel,30,Male,6'3'',Hispanic,190.5,29-33
+74,Julian,31,Male,6'1'',Hispanic,185.42,29-33
+75,Aaro ,29,Male,5'7'',Hispanic,170.18,29-33
+76,Angel,30,Male,5'11'',Hispanic,180.34,29-33
+77,Damian,29,Male,5'5'',Hispanic,165.1,29-33
+78,Andres,29,Male,5'10,Hispanic,177.8,29-33
+79,Adrian,31,Male,5'9'',Hispanic,175.26,29-33
+80,Jeffrey,29,Male,6'3'',Hispanic,190.5,29-33
+81,Steven,29,Male,5'8'',East Asian,172.72,29-33
+82,Sam ,32,Male,6'0'',East Asian,182.88,29-33
+83,Lee,29,Male,6'1'',East Asian,185.42,29-33
+84,Andy,29,Male,5'11'',East Asian,180.34,29-33
+85,Shreyas,29,Male,5'9'',South Asian ,175.26,29-33
+86,Ysh,30,Male,5'8'',East Asian,172.72,29-33
+87,David,30,Male,5'9'',East Asian,175.26,29-33
+88,Aaman,32,Male,6'1'',South Asian ,185.42,29-33
+89,Alvin,32,Male,5'10'',East Asian,177.8,29-33
+90,Jai,32,Male,5'9'',South Asian ,175.26,29-33
+91,Frank,32,Male,5'11'',East Asian,180.34,29-33
+92,Isaac,30,Male,6'0'',East Asian,182.88,29-33
+93,Josh,29,Male,5'7'',East Asian,170.18,29-33
+94,Charles,29,Male,6'0'',East Asian,182.88,29-33
+95,Vibhanshu,29,Male,6'2'',South Asian ,187.96,29-33
+96,Ayush,29,Male,6'2'',South Asian ,187.96,29-33
+97,Adi ,30,Male,6'1'',South Asian ,185.42,29-33
+98,Yash,30,Male,6'0'',South Asian ,182.88,29-33
+99,Siyun,29,Male,5'11'',East Asian,180.34,29-33
+100,Kalam,31,Male,5'6'',South Asian ,167.64,29-33
+1,Matt,34,Male,5'11'',White,180.34,34-40
+2,Will,39,Male,5'11'',White,180.34,34-40
+3,Endrit,36,Male,5'9'',White,175.26,34-40
+4,Carlo,35,Male,5'10'',White,177.8,34-40
+5,Elliot,34,Male,6'0'',White,182.88,34-40
+6,Blaine,35,Male,5'11'',White,180.34,34-40
+7,Alec,39,Male,6'2'',White,187.96,34-40
+8,Chad,34,Male,5'5'',White,165.1,34-40
+9,Brendon        ,39,Male,5'10'',White,177.8,34-40
+10,Volkan,35,Male,5'10'',White,177.8,34-40
+11,Francisco,36,Male,6'0'',White,182.88,34-40
+12,Vincent,39,Male,5'9'',White,175.26,34-40
+13,Dan,39,Male,6'4'',White,193.04,34-40
+14,Garrett,34,Male,6'3'',White,190.5,34-40
+15,James,34,Male,6'1'',White,185.42,34-40
+16,Alexander,39,Male,6'1'',White,185.42,34-40
+17,Michael,35,Male,5'7'',White,170.18,34-40
+18,Timothy,36,Male,6'3'',White,190.5,34-40
+19,Alex ,34,Male,5'10'',White,177.8,34-40
+20,Robbie,39,Male,6'0'',White,182.88,34-40
+21,Carl ,34,Male,6'1'',White,185.42,34-40
+22,Danny,37,Male,5'7'',White,170.18,34-40
+23,Jordi,34,Male,6'2'',White,187.96,34-40
+24,Chris,38,Male,5'11'',White,180.34,34-40
+25,John,34,Male,5'11'',White,180.34,34-40
+26,Gregory,39,Male,6'1'',White,185.42,34-40
+27,Jack,38,Male,5'10'',White,177.8,34-40
+28,Jeffrey,38,Male,6'2'',White,187.96,34-40
+29,Alex,38,Male,5'9'',White,175.26,34-40
+30,Steven,37,Male,6'0'',White,182.88,34-40
+31,Sebastian,37,Male,5'9'',White,175.26,34-40
+32,Mark,38,Male,6'0'',White,182.88,34-40
+33,Gustavo,36,Male,5'11'',White,180.34,34-40
+34,Dominik,34,Male,5'9'',White,175.26,34-40
+35,Joey,36,Male,6'2'',White,187.96,34-40
+36,Greg ,36,Male,5'8'',White,172.72,34-40
+37,Roman,35,Male,6'2'',White,187.96,34-40
+38,Cameron,38,Male,5'11'',White,180.34,34-40
+39,Will,35,Male,5'8'',White,172.72,34-40
+40,Kane,34,Male,5'8'',White,172.72,34-40
+41,Taylor,35,Male,5'9'',White,175.26,34-40
+42,Devin,36,Male,5'10'',White,177.8,34-40
+43,Billy,34,Male,5'10'',White,177.8,34-40
+44,David,36,Male,5'11'',White,180.34,34-40
+45,Michael,39,Male,6'0'',White,182.88,34-40
+46,AI,37,Male,6'0'',White,182.88,34-40
+47,Mark,36,Male,5'11'',White,180.34,34-40
+48,An,35,Male,6'8'',White,203.2,34-40
+49,Robert,38,Male,5'11'',White,180.34,34-40
+50,Jake,35,Male,5'10'',White,177.8,34-40
+51,Timothy,38,Male,5'9'',Black,175.26,34-40
+52,Jack,35,Male,5'11'',Black,180.34,34-40
+53,Lemeire,38,Male,6'3'',Black,190.5,34-40
+54,Jonathan,34,Male,5'8'',Black,172.72,34-40
+55,B,36,Male,6'0'',Black,182.88,34-40
+56,Andy,37,Male,5'9'',Black,175.26,34-40
+57,Roc,38,Male,5'11'',Black,180.34,34-40
+58,Comrade,37,Male,6'4'',Black,193.04,34-40
+59,Allen,38,Male,6'2'',Black,187.96,34-40
+60,Nag'ee,34,Male,5'10'',Black,177.8,34-40
+61,Terrence,34,Male,5'10'',Black,177.8,34-40
+62,Carlton,35,Male,5'11'',Black,180.34,34-40
+63,Waz,38,Male,6'0'',Black,182.88,34-40
+64,DeVere,38,Male,6'0'',Black,182.88,34-40
+65,Nio,38,Male,6'6'',Black,198.12,34-40
+66,Zeus,39,Male,5'6'',Hispanic,167.64,34-40
+67,Mark,36,Male,5'7'',Hispanic,170.18,34-40
+68,Bryan,34,Male,5'10'',Hispanic,177.8,34-40
+69,Dario,39,Male,6'1'',Hispanic,185.42,34-40
+70,Xavier,34,Male,5'5'',Hispanic,165.1,34-40
+71,Carlos,35,Male,6'0'',Hispanic,182.88,34-40
+72,Cito,37,Male,5'11'',Hispanic,180.34,34-40
+73,Gio,36,Male,5'10'',Hispanic,177.8,34-40
+74,Anthony,37,Male,5'4'',Hispanic,162.56,34-40
+75,Elvis,36,Male,5'6'',Hispanic,167.64,34-40
+76,Jose,38,Male,5'8'',Hispanic,172.72,34-40
+77,Addinson,34,Male,6'0'',Hispanic,182.88,34-40
+78,Thomas,34,Male,5'10'',Hispanic,177.8,34-40
+79,Lorenzo,37,Male,5'11'',Hispanic,180.34,34-40
+80,Siak,37,Male,5'11,Middle Eastern,180.34,34-40
+81,Wayne,39,Male,5'9'',East Asian,175.26,34-40
+82,Soroush,35,Male,5'10'',South Asian ,177.8,34-40
+83,Richard,36,Male,6'0'',East Asian,182.88,34-40
+84,Saugat,38,Male,5'7'',South Asian ,170.18,34-40
+85,Raghav,34,Male,5'7'',South Asian ,170.18,34-40
+86,Brian,35,Male,6'0'',East Asian,182.88,34-40
+87,Duke,35,Male,5'7'',Middle Eastern,170.18,34-40
+88,Heeyoung,38,Male,5'10'',East Asian,177.8,34-40
+89,Dev,35,Male,5'9'',East Asian,175.26,34-40
+90,Ayan,35,Male,5'10'',Middle Eastern,177.8,34-40
+91,W,36,Male,5'8'',East Asian,172.72,34-40
+92,Patrik,38,Male,6'0'',East Asian,182.88,34-40
+93,John,35,Male,6'2'',East Asian,187.96,34-40
+94,Raviraj,35,Male,5'9'',East Asian,175.26,34-40
+95,John,36,Male,5'9'',East Asian,175.26,34-40
+96,Abdulla,36,Male,6'0'',South Asian ,182.88,34-40
+97,Jimmy,38,Male,5'9'',East Asian,175.26,34-40
+98,Pejman,34,Male,5'7'',Middle Eastern,170.18,34-40
+99,Wesley,36,Male,5'8'',South Asian ,172.72,34-40
+100,Raymond,35,Male,5'10'',East Asian,177.8,34-40
+1,John,56,Male,5'10'',White,177.8,40+
+2,Daniel,44,Male,5'9'',White,175.26,40+
+3,Chris,41,Male,6'0'',White,182.88,40+
+4,Christopher,45,Male,5'8'',White,172.72,40+
+5,Patrick,40,Male,6'0'',White,182.88,40+
+6,Mark,67,Male,5'8'',White,172.72,40+
+7,Yoann,42,Male,5'9'',White,175.26,40+
+8,David ,41,Male,5'10'',White,177.8,40+
+9,Donald ,62,Male,5'11'',White,180.34,40+
+10,Jason ,42,Male,5'8'',White,172.72,40+
+11,O ,47,Male,5'11'',White,180.34,40+
+12,Don ,71,Male,6'0'',White,182.88,40+
+13,Andres,41,Male,5'8'',White,172.72,40+
+14,Sal ,69,Male,5'9'',White,175.26,40+
+15,Joe,53,Male,5'8'',White,172.72,40+
+16,Faith,44,Male,5'9'',White,175.26,40+
+17,John,42,Male,6'4'',White,193.04,40+
+18,Ran,54,Male,5'8'',White,172.72,40+
+19,Matt,40,Male,5'9'',White,175.26,40+
+20,Greeneyes ,44,Male,6'1'',White,185.42,40+
+21,Eli,59,Male,6'1'',White,185.42,40+
+22,Eric ,46,Male,5'7'',White,170.18,40+
+23,Steve,41,Male,6'2'',White,187.96,40+
+24,Nick,55,Male,6'4'',White,193.04,40+
+25,Joel,71,Male,5'8'',White,172.72,40+
+26,James,53,Male,6'2'',White,187.96,40+
+27,Kevin,53,Male,6'0'',White,182.88,40+
+28,Dennis,57,Male,6'2'',White,187.96,40+
+29,Shawn,45,Male,5'5'',White,165.1,40+
+30,Jeff,48,Male,5'7'',White,170.18,40+
+31,John,40,Male,6'2'',White,187.96,40+
+32,Gianfranco,42,Male,5'7'',White,170.18,40+
+33,Danny,55,Male,5'10'',White,177.8,40+
+34,Nicholas,50,Male,6'2'',White,187.96,40+
+35,Tim,50,Male,5'10'',White,177.8,40+
+36,Tory,46,Male,6'0'',White,182.88,40+
+37,Nuo,45,Male,5'11'',White,180.34,40+
+38,David ,48,Male,5'5'',White,165.1,40+
+39,Thomas,57,Male,5'10'',White,177.8,40+
+40,John,45,Male,5'10'',White,177.8,40+
+41,Jordan,44,Male,5'10'',White,177.8,40+
+42,Mark,49,Male,6'2'',White,187.96,40+
+43,Rick,58,Male,5'9'',White,175.26,40+
+44,Joseph,41,Male,6'2'',White,187.96,40+
+45,Dennis,43,Male,5'7'',White,170.18,40+
+46,James,52,Male,5'11'',White,180.34,40+
+47,Anthony,50,Male,5'6'',White,167.64,40+
+48,Amir,49,Male,5'11'',White,180.34,40+
+49,Jim,55,Male,5'11'',White,180.34,40+
+50,Larry,44,Male,5'7'',White,170.18,40+
+51,Mike,41,Male,5'5'',Black ,165.1,40+
+52,Julius,42,Male,5'9'',Black ,175.26,40+
+53,Prince,40,Male,5'9'',Black ,175.26,40+
+54,Vaughn,55,Male,5'11'',Black ,180.34,40+
+55,Adonis,44,Male,5'11'',Black ,180.34,40+
+56,AB,42,Male,6'2'',Black ,187.96,40+
+57,Sean,45,Male,6'1'',Black ,185.42,40+
+58,Olnine,41,Male,6'0'',Black ,182.88,40+
+59,MK,41,Male,6'1'',Black ,185.42,40+
+60,Abraham,40,Male,5'7'',Black ,170.18,40+
+61,Don,48,Male,5'7'',Black ,170.18,40+
+62,Will,44,Male,5'10'',Black ,177.8,40+
+63,Earl,47,Male,6'2'',Black ,187.96,40+
+64,Darien,42,Male,5'11'',Black ,180.34,40+
+65,Smiles,42,Male,6'0'',Black ,182.88,40+
+66,Fernando,41,Male,5'7'',Hispanic,170.18,40+
+67,Carlos,40,Male,6'3'',Hispanic,190.5,40+
+68,Tito,50,Male,5'7'',Hispanic,170.18,40+
+69,Orlando,50,Male,6'0'',Hispanic,182.88,40+
+70,Santos,47,Male,5'7'',Hispanic,170.18,40+
+71,Jose ,43,Male,6'2'',Hispanic,187.96,40+
+72,Jay,44,Male,6'3'',Hispanic,190.5,40+
+73,Victor,51,Male,6'1'',Hispanic,185.42,40+
+74,Manny,40,Male,5'11'',Hispanic,180.34,40+
+75,John,44,Male,5'9'',Hispanic,175.26,40+
+76,Carlton,51,Male,5'7'',Hispanic,170.18,40+
+77,Noel,50,Male,6'1'',Hispanic,185.42,40+
+78,Ruben,42,Male,5'10'',Hispanic,177.8,40+
+79,Junior,40,Male,6'0'',Hispanic,182.88,40+
+80,Albert,42,Male,5'7'',Hispanic,170.18,40+
+81,Ahmed,40,Male,6'1'',Middle Eastern,185.42,40+
+82,Jae,42,Male,5'9'',East Asian,175.26,40+
+83,Kas,40,Male,5'8'',Middle Eastern,172.72,40+
+84,Kenny,53,Male,5'7'',East Asian,170.18,40+
+85,Anurag,44,Male,6'0'',South Asian,182.88,40+
+86,Joshua,40,Male,6'2'',South Asian,187.96,40+
+87,Chirag,41,Male,6'0'',South Asian,182.88,40+
+88,Manuel,44,Male,5'9'',South Asian,175.26,40+
+89,Ozzy,46,Male,5'8'',Middle Eastern,172.72,40+
+90,Pat ,44,Male,5'6'',Middle Eastern,167.64,40+
+91,Tee,42,Male,6'1'',Native American,185.42,40+
+92,Tyler,40,Male,5'9'',East Asian,175.26,40+
+93,Billy,40,Male,5'8'',East Asian,172.72,40+
+94,Rudy,43,Male,5'11'',East Asian,180.34,40+
+95,Eric ,41,Male,6'1'',South Asian,185.42,40+
+96,V,40,Male,5'11'',Middle Eastern,180.34,40+
+97,Sean,52,Male,5'9'',East Asian,175.26,40+
+98,Nashaun,41,Male,5'6'',Native American,167.64,40+
+99,Saumil,45,Male,5'11'',South Asian,180.34,40+
+100,Jacob,45,Male,5'8'',Middle Eastern,172.72,40+

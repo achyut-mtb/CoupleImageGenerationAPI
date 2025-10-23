@@ -1,0 +1,39 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# --- Environments ---
+.venv/
+venv/
+env/
+ENV/
+*.env
+lib/
+bin/
+include/
+Scripts/
+pair_gen_api/
+
+# --- Build & Distribution ---
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# --- Logs & Temporary Files ---
+*.log
+*.tmp
+*.bak
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+

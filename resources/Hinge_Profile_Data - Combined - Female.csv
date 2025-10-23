@@ -1,0 +1,497 @@
+Sl. no.,Name,Age,Gender,Height,Ethnicity,Height_CM,Age-Group
+1,Mya ,18,Female,5'5'',White,165.1,18-22
+2,Liv,21,Female,4'10'',White,147.32,18-22
+3,Lea,20,Female,5'0'',White,152.4,18-22
+4,Alyssa,21,Female,5'4'',White,162.56,18-22
+5,Abbie,19,Female,5'6'',White,167.64,18-22
+6,Allie,21,Female,5'3'',White,160.02,18-22
+7,Kimberly,19,Female,5'7'',White,170.18,18-22
+8,Lily,20,Female,5'2'',White,157.48,18-22
+9,Maggie,18,Female,5'3'',White,160.02,18-22
+10,Nyla,21,Female,5'3'',White,160.02,18-22
+11,Mackenzie,18,Female,5'6'',White,167.64,18-22
+12,Sophia,18,Female,5'7'',White,170.18,18-22
+13,Mikayla,21,Female,5'2'',White,157.48,18-22
+14,Julia,21,Female,5'6'',White,167.64,18-22
+15,Shealyn,20,Female,5'2'',White,157.48,18-22
+16,Abby,21,Female,5'9'',White,175.26,18-22
+17,Savannah,21,Female,5'6'',White,167.64,18-22
+18,Syd,20,Female,5'6'',White,167.64,18-22
+19,Mickey,21,Female,5'5'',White,165.1,18-22
+20,Nina,21,Female,5'2'',White,157.48,18-22
+21,Meredith,18,Female,5'7'',White,170.18,18-22
+22,Carrin,21,Female,5'3'',White,160.02,18-22
+23,Juliana,20,Female,5'8'',White,172.72,18-22
+24,River,19,Female,5'9'',White,175.26,18-22
+25,Alyssa,21,Female,5'6'',White,167.64,18-22
+26,Averie,20,Female,5'7'',White,170.18,18-22
+27,Miranda,20,Female,5'7'',White,170.18,18-22
+28,Lauren,18,Female,5'7'',White,170.18,18-22
+29,Em,19,Female,5'1'',White,154.94,18-22
+30,Fiona,20,Female,5'2'',White,157.48,18-22
+31,Kristin,21,Female,4'11'',White,149.86,18-22
+32,Morgan,20,Female,5'3'',White,160.02,18-22
+33,Caitlin,18,Female,5'4'',White,162.56,18-22
+34,Emily,20,Female,5'3'',White,160.02,18-22
+35,Gwen,21,Female,5'7'',White,170.18,18-22
+36,Cami,19,Female,5'8'',White,172.72,18-22
+37,Aya,18,Female,5'6'',White,167.64,18-22
+38,Sydney,20,Female,5'4'',White,162.56,18-22
+39,Elena,21,Female,5'2'',White,157.48,18-22
+40,Julia,20,Female,5'4'',White,162.56,18-22
+41,Kathleen,20,Female,5'5'',White,165.1,18-22
+42,Parker,20,Female,5'8'',White,172.72,18-22
+43,Alexis,18,Female,5'1'',White,154.94,18-22
+44,Sava ,21,Female,5'5'',White,165.1,18-22
+45,Faith,21,Female,5'3'',White,160.02,18-22
+46,Paige,19,Female,5'8'',White,172.72,18-22
+47,Claire,18,Female,5'8'',White,172.72,18-22
+48,Finley,21,Female,5'4'',White,162.56,18-22
+49,Kyra,21,Female,5'5'',White,165.1,18-22
+50,Icelsa,20,Female,5'6'',Black,167.64,18-22
+51,Lisandra,21,Female,5'8'',Black,172.72,18-22
+52,Nia,21,Female,5'7'',Black,170.18,18-22
+53,Lecia,20,Female,5'5'',Black,165.1,18-22
+54,Jamiyah,21,Female,5'7'',Black,170.18,18-22
+55,Lauren,20,Female,5'10'',Black,177.8,18-22
+56,Robyn,20,Female,5'6'',Black,167.64,18-22
+57,Remy,20,Female,5'9'',Black,175.26,18-22
+58,Cyd,19,Female,5'3'',Black,160.02,18-22
+59,Loosana,21,Female,5'5'',Black,165.1,18-22
+60,Jaralynn,19,Female,5'2'',Black,157.48,18-22
+61,Nyomi,20,Female,5'8'',Black,172.72,18-22
+62,Mila,21,Female,5'4'',Black,162.56,18-22
+63,Abrianna,20,Female,5'10'',Black,177.8,18-22
+64,Cadence,21,Female,5'3'',Hispanic,160.02,18-22
+65,Phia,21,Female,5'2'',Hispanic,157.48,18-22
+66,Madi,18,Female,5'6'',Hispanic,167.64,18-22
+67,Maria Teresa,19,Female,5'3'',Hispanic,160.02,18-22
+68,Isabel,20,Female,5'2'',Hispanic,157.48,18-22
+69,Sarah,21,Female,5'1'',Hispanic,154.94,18-22
+70,Natalie,18,Female,5'1'',Hispanic,154.94,18-22
+71,Adilene,19,Female,5'8'',Hispanic,172.72,18-22
+72,Jaquelin,20,Female,5'2'',Hispanic,157.48,18-22
+73,Kasie,19,Female,5'3'',Hispanic,160.02,18-22
+74,Rosmerlyn,19,Female,5'6'',Hispanic,167.64,18-22
+75,Michelle,21,Female,5'3'',Hispanic,160.02,18-22
+76,Anaury,20,Female,5'2'',Hispanic,157.48,18-22
+77,Anaiya Lee,20,Female,5'8'',Hispanic,172.72,18-22
+78,Kathy,18,Female,5'1'',Hispanic,154.94,18-22
+79,Hazel,18,Female,5'4'',South Asian ,162.56,18-22
+80,Karina,20,Female,5'8'',South Asian ,172.72,18-22
+81,Diya,20,Female,5'5'',South Asian ,165.1,18-22
+82,Hailey,20,Female,5'1'',East Asian,154.94,18-22
+83,Neo,18,Female,5'4'',South Asian ,162.56,18-22
+84,Varsh,19,Female,5'4'',South Asian ,162.56,18-22
+85,Krishna,21,Female,5'10'',South Asian ,177.8,18-22
+86,Noor,21,Female,5'3'',Middle Eastern,160.02,18-22
+87,Myra,21,Female,5'2'',South Asian ,157.48,18-22
+88,Max,19,Female,5'2'',South Asian ,157.48,18-22
+89,Aamina,19,Female,5'1'',South Asian ,154.94,18-22
+90,Dari,20,Female,5'5'',Middle Eastern,165.1,18-22
+91,Frankie,19,Female,5'9'',Middle Eastern,175.26,18-22
+92,Saumaiya,20,Female,5'4'',South Asian ,162.56,18-22
+93,Tanuza,21,Female,5'2'',South Asian ,157.48,18-22
+94,Taryan,21,Female,5'1'',East Asian,154.94,18-22
+95,Tess,19,Female,5'4'',South Asian ,162.56,18-22
+96,Anisa,21,Female,5'4'',South Asian ,162.56,18-22
+97,Cordelia,21,Female,5'10'',Middle Eastern,177.8,18-22
+98,Nikki,20,Female,5'3'',South Asian ,160.02,18-22
+99,Lavender,19,Female,5'6'',Caucasian,167.64,18-22
+100,Adrianna,22,Female,5'5'',East Asian,165.1,18-22
+1,Diana,24,Female,5'3'',White,160.02,23-28
+2,Kristiana,27,Female,5'4'',White,162.56,23-28
+3,Madilyn,25,Female,5'5'',White,165.1,23-28
+4,Ariana,24,Female,5'7'',White,170.18,23-28
+5,Lia,23,Female,5'6'',White,167.64,23-28
+6,Dalal,24,Female,5'4'',White,162.56,23-28
+7,Ash,27,Female,5'6'',White,167.64,23-28
+8,Lauren,26,Female,5'1'',White,154.94,23-28
+9,Anna,26,Female,5'1'',White,154.94,23-28
+10,Rachel,24,Female,5'5'',White,165.1,23-28
+11,Emily,26,Female,5'1'',White,154.94,23-28
+12,Kate,23,Female,5'2'',White,157.48,23-28
+13,Jill,23,Female,5'4'',White,162.56,23-28
+14,Renee,23,Female,4'10'',White,147.32,23-28
+15,Gigi,24,Female,5'8'',White,172.72,23-28
+16,Valerie,26,Female,5'8'',White,172.72,23-28
+17,Aiyana,24,Female,5'9'',White,175.26,23-28
+18,Emily,26,Female,5'8'',White,172.72,23-28
+19,Calli,23,Female,5'6'',White,167.64,23-28
+20,Rebecca,25,Female,5'7'',White,170.18,23-28
+21,Madison,24,Female,5'2'',White,157.48,23-28
+22,Shannon,24,Female,5'4'',White,162.56,23-28
+23,Alexis,24,Female,5'7'',White,170.18,23-28
+24,Fiona,24,Female,5'3'',White,160.02,23-28
+25,Molly,23,Female,5'2'',White,157.48,23-28
+26,Valerie,23,Female,5'3'',White,160.02,23-28
+27,Katherine,23,Female,5'4'',White,162.56,23-28
+28,Jean,24,Female,5'7'',White,170.18,23-28
+29,Sarah,24,Female,5'4'',White,162.56,23-28
+30,Rachel,25,Female,5'2'',White,157.48,23-28
+31,Amaliya,24,Female,5'8'',White,172.72,23-28
+32,Angie,23,Female,5'2'',White,157.48,23-28
+33,Sara ,25,Female,5'3'',White,160.02,23-28
+34,Noa,26,Female,5'4'',White,162.56,23-28
+35,Kita,27,Female,5'5'',White,165.1,23-28
+36,Katie,25,Female,5'6'',White,167.64,23-28
+37,Maggie,24,Female,5'4'',White,162.56,23-28
+38,Jacklyn,27,Female,5'1'',White,154.94,23-28
+39,Brooke,25,Female,5'5'',White,165.1,23-28
+40,Shayna,23,Female,5'3'',White,160.02,23-28
+41,MacKenzie,26,Female,5'10'',White,177.8,23-28
+42,Ed,24,Female,5'7'',White,170.18,23-28
+43,Julia,23,Female,5'4'',White,162.56,23-28
+44,Caroline,25,Female,4'11'',White,149.86,23-28
+45,Sydney,23,Female,5'11'',White,180.34,23-28
+46,Annie,25,Female,5'5'',White,165.1,23-28
+47,Caroline,27,Female,5'4'',White,162.56,23-28
+48,Jessica,24,Female,5'4'',White,162.56,23-28
+49,Maddie,25,Female,5'5'',White,165.1,23-28
+50,Emily,23,Female,5'4'',White,162.56,23-28
+51,Brykala,24,Female,4'11'',Black,149.86,23-28
+52,Ange,24,Female,5'3'',Black,160.02,23-28
+53,Iris,24,Female,5'5'',Black,165.1,23-28
+54,Jamelia,25,Female,5'1'',Black,154.94,23-28
+55,Samantha,23,Female,5'4'',Black,162.56,23-28
+56,Seipati,25,Female,5'4'',Black,162.56,23-28
+57,Diamond,25,Female,5'8'',Black,172.72,23-28
+58,Cece,25,Female,5'4'',Black,162.56,23-28
+59,Destiny,25,Female,5'9'',Black,175.26,23-28
+60,Sisi,25,Female,5'10'',Black,177.8,23-28
+61,Jaylona,25,Female,5'7'',Black,170.18,23-28
+62,Janyia,23,Female,5'5'',Black,165.1,23-28
+63,Yusef,26,Female,5'1'',Black,154.94,23-28
+64,Tatiyana,26,Female,5'5'',Black,165.1,23-28
+65,Sofia,23,Female,5'4'',Hispanic,162.56,23-28
+66,Jess ,23,Female,5'3'',Hispanic,160.02,23-28
+67,Mya,24,Female,5'5'',Hispanic,165.1,23-28
+68,Brab,24,Female,5'4'',Hispanic,162.56,23-28
+69,Bea,23,Female,5'0'',Hispanic,152.4,23-28
+70,Luy,25,Female,5'3'',Hispanic,160.02,23-28
+71,Clau,23,Female,5'3'',Hispanic,160.02,23-28
+72,Ani,27,Female,5'2'',Hispanic,157.48,23-28
+73,Nathalie,23,Female,5'5'',Hispanic,165.1,23-28
+74,Nicol,27,Female,5'7'',Hispanic,170.18,23-28
+75,Erika,23,Female,5'3'',Hispanic,160.02,23-28
+76,Nina,27,Female,5'2'',Hispanic,157.48,23-28
+77,Lidia,24,Female,5'7'',Hispanic,170.18,23-28
+78,Ashley,26,Female,5'2'',Hispanic,157.48,23-28
+79,Diana,26,Female,5'7'',Hispanic,170.18,23-28
+80,Minju,26,Female,5'5'',East Asian,165.1,23-28
+81,Lilly,23,Female,5'4'',South Asian,162.56,23-28
+82,Harneet,23,Female,5'3'',South Asian,160.02,23-28
+83,Dhwani,27,Female,5'3'',South Asian,160.02,23-28
+84,Jas,25,Female,5'4'',South Asian,162.56,23-28
+85,Trac,24,Female,5'5'',Native American ,165.1,23-28
+86,Mitali,23,Female,5'2'',South Asian,157.48,23-28
+87,Sravya,26,Female,5'6'',South Asian,167.64,23-28
+88,Maura,27,Female,5'2'',East Asian,157.48,23-28
+89,Sofia,23,Female,5'5'',Middle Eastern,165.1,23-28
+90,Sooyeon,26,Female,5'5'',East Asian,165.1,23-28
+91,Grace,23,Female,5'7'',East Asian,170.18,23-28
+92,Tabby,24,Female,5'7'',South Asian,170.18,23-28
+93,Samyukta,24,Female,5'5'',South Asian,165.1,23-28
+94,Jalak,23,Female,5'5'',South Asian,165.1,23-28
+95,Preksha,24,Female,5'3'',South Asian,160.02,23-28
+96,Anuva,24,Female,5'3'',South Asian,160.02,23-28
+97,Zoe,23,Female,5'3'',Native American ,160.02,23-28
+98,Shreya,24,Female,5'6'',South Asian,167.64,23-28
+99,Angela,23,Female,5'6'',East Asian,167.64,23-28
+100,Karren,25,Female,5'1'',East Asian,154.94,23-28
+1,Tuija,32,Female,5'1'',White,154.94,29-33
+2,Logan,29,Female,5'6'',White,167.64,29-33
+3,Jennifer,30,Female,5'11'',White,180.34,29-33
+4,Jaclyn,30,Female,5'2'',White,157.48,29-33
+5,Michelle,31,Female,5'4'',White,162.56,29-33
+6,Angel,29,Female,5'7'',White,170.18,29-33
+7,Sara,30,Female,5'0'',White,152.4,29-33
+8,T ,32,Female,5'4'',White,162.56,29-33
+9,Andrea,29,Female,5'5'',White,165.1,29-33
+10,Caitlin,29,Female,5'10'',White,177.8,29-33
+11,Helen,30,Female,5'6'',White,167.64,29-33
+12,Katie,29,Female,5'6'',White,167.64,29-33
+13,Skyler,32,Female,5'4'',White,162.56,29-33
+14,Mary Frances,30,Female,5'2'',White,157.48,29-33
+15,Jessie,31,Female,5'8'',White,172.72,29-33
+16,Molly,30,Female,5'5'',White,165.1,29-33
+17,Natalie,31,Female,5'7'',White,170.18,29-33
+18,Kasie Lynne,29,Female,5'9'',White,175.26,29-33
+19,Genevieve,31,Female,5'9'',White,175.26,29-33
+20,Ceci,31,Female,5'6'',White,167.64,29-33
+21,Sarah,30,Female,5'2'',White,157.48,29-33
+22,Megan,31,Female,5'2'',White,157.48,29-33
+23,Emma,32,Female,5'3'',White,160.02,29-33
+24,Taylor,31,Female,5'4'',White,162.56,29-33
+25,Clara,30,Female,5'5'',White,165.1,29-33
+26,Sarah,30,Female,5'5'',White,165.1,29-33
+27,Liana,32,Female,5'0'',White,152.4,29-33
+28,Hannah,29,Female,5'2'',White,157.48,29-33
+29,Mariola,31,Female,4'11'',White,149.86,29-33
+30,Liv,29,Female,5'4'',White,162.56,29-33
+31,Jessica,29,Female,5'9'',White,175.26,29-33
+32,Erica,30,Female,5'5'',White,165.1,29-33
+33,Evelyn,29,Female,5'7'',White,170.18,29-33
+34,Margaret,29,Female,5'8'',White,172.72,29-33
+35,Anne,32,Female,5'5'',White,165.1,29-33
+36,Joy,29,Female,5'7'',White,170.18,29-33
+37,Brooke,31,Female,5'6'',White,167.64,29-33
+38,Soraya,29,Female,5'6'',White,167.64,29-33
+39,Melissa,29,Female,5'8'',White,172.72,29-33
+40,Victoria,32,Female,5'3'',White,160.02,29-33
+41,Hayley,32,Female,5'4'',White,162.56,29-33
+42,Hailey,31,Female,6'0'',White,182.88,29-33
+43,Nicole,32,Female,5'1'',White,154.94,29-33
+44,MileyAnne,29,Female,5'4'',White,162.56,29-33
+45,Stephanie,30,Female,5'7'',White,170.18,29-33
+46,Helaina,29,Female,5'2'',White,157.48,29-33
+47,Victoria,31,Female,5'7'',White,170.18,29-33
+48,Ellie,31,Female,5'2'',White,157.48,29-33
+49,Shannon,29,Female,5'3'',White,160.02,29-33
+50,Rachel,29,Female,5'11'',White,180.34,29-33
+51,Alexis,32,Female,5'3'',Black,160.02,29-33
+52,Christaline,29,Female,5'3'',Black,160.02,29-33
+53,Diamond,29,Female,5'7'',Black,170.18,29-33
+54,Syd,31,Female,5'8'',Black,172.72,29-33
+55,Shaniece,32,Female,5'7'',Black,170.18,29-33
+56,Sparkle,30,Female,5'2'',Black,157.48,29-33
+57,Tynysha,29,Female,5'2'',Black,157.48,29-33
+58,Sarah,29,Female,5'9'',Black,175.26,29-33
+59,Domis Des,31,Female,5'8'',Black,172.72,29-33
+60,Cho,32,Female,5'4'',Black,162.56,29-33
+61,Nola,30,Female,5'5'',Black,165.1,29-33
+62,Sabrine,29,Female,5'7'',Black,170.18,29-33
+63,Stacie,30,Female,5'5'',Black,165.1,29-33
+64,Kai,32,Female,5'5'',Black,165.1,29-33
+65,Quiana,29,Female,5'5'',Black,165.1,29-33
+66,Carina,32,Female,5'1'',Hispanic,154.94,29-33
+67,Brenda,29,Female,5'7'',Hispanic,170.18,29-33
+68,Leny,29,Female,5'4'',Hispanic,162.56,29-33
+69,Emily,31,Female,5'4'',Hispanic,162.56,29-33
+70,Jasmin,31,Female,5'3'',Hispanic,160.02,29-33
+71,Alex ,29,Female,5'5'',Hispanic,165.1,29-33
+72,Ash,30,Female,5'1'',Hispanic,154.94,29-33
+73,Kittie,31,Female,5'1'',Hispanic,154.94,29-33
+74,Nataly,32,Female,5'4'',Hispanic,162.56,29-33
+75,Nicole,29,Female,5'7'',Hispanic,170.18,29-33
+76,Jessica,32,Female,5'6'',Hispanic,167.64,29-33
+77,Gabby,29,Female,5'0'',Hispanic,152.4,29-33
+78,Jennifer,29,Female,5'6'',Hispanic,167.64,29-33
+79,Yessa,29,Female,5'5'',Hispanic,165.1,29-33
+80,Karina,32,Female,4'11'',Hispanic,149.86,29-33
+81,Sam,29,Female,5'8'',South Asian,172.72,29-33
+82,Aries,29,Female,5'3'',East Asian ,160.02,29-33
+83,Sandy,32,Female,5'2'',East Asian ,157.48,29-33
+84,Nidhi,29,Female,5'2'',South Asian,157.48,29-33
+85,Stella,29,Female,5'3'',South Asian,160.02,29-33
+86,Nasim,31,Female,5'7'',Middle Eastern,170.18,29-33
+87,Lana,32,Female,5'5'',Middle Eastern,165.1,29-33
+88,Chao,29,Female,5'5'',Southeast Asian,165.1,29-33
+89,Gwen,29,Female,5'5'',East Asian ,165.1,29-33
+90,Sarah,31,Female,5'1'',Middle Eastern,154.94,29-33
+91,Guila,29,Female,5'5'',Southeast Asian,165.1,29-33
+92,Tiffany,31,Female,5'2'',East Asian ,157.48,29-33
+93,Megha,29,Female,5'4'',South Asian,162.56,29-33
+94,Vee,29,Female,5'2'',Middle Eastern,157.48,29-33
+95,Lelah,32,Female,5'7'',Natie Americamn,170.18,29-33
+96,Amber,32,Female,5'5'',East Asian ,165.1,29-33
+97,Aniqa,30,Female,4'11'',Southeast Asian,149.86,29-33
+98,Katrina,30,Female,5'5'',East Asian ,165.1,29-33
+99,Nhi,31,Female,5'4'',Southeast Asian,162.56,29-33
+100,Xiaoxuan,30,Female,5'5'',East Asian ,165.1,29-33
+1,Ren,34,Female,5'11'',White,180.34,34-40
+2,Court,38,Female,5'7'',White,170.18,34-40
+3,Samantha,34,Female,5'4'',White,162.56,34-40
+4,Stef,37,Female,5'1'',White,154.94,34-40
+5,Jessica,36,Female,5'3'',White,160.02,34-40
+6,Claire,34,Female,5'3'',White,160.02,34-40
+7,Vega,39,Female,5'0'',White,152.4,34-40
+8,Alli,36,Female,5'7'',White,170.18,34-40
+9,Lisa,37,Female,4'11'',White,149.86,34-40
+10,Christine,38,Female,4'11'',White,149.86,34-40
+11,Nicole,36,Female,5'5'',White,165.1,34-40
+12,Jennie,39,Female,5'2'',White,157.48,34-40
+13,Aline,38,Female,5'4'',White,162.56,34-40
+14,Audrey,35,Female,5'1'',White,154.94,34-40
+15,Joey,34,Female,5'9'',White,175.26,34-40
+16,Haley,35,Female,5'4'',White,162.56,34-40
+17,Kaylin,34,Female,5'3'',White,160.02,34-40
+18,Loni,34,Female,5'2'',White,157.48,34-40
+19,Colleen,38,Female,5'1'',White,154.94,34-40
+20,Liz,34,Female,5'3'',White,160.02,34-40
+21,Mikayla,34,Female,6'0'',White,182.88,34-40
+22,Eliza,34,Female,5'9'',White,175.26,34-40
+23,Maddie,34,Female,5'2'',White,157.48,34-40
+24,Jen ,35,Female,5'7'',White,170.18,34-40
+25,Hannah,34,Female,5'10'',White,177.8,34-40
+26,Becky,34,Female,5'4'',White,162.56,34-40
+27,Cara,39,Female,5'8'',White,172.72,34-40
+28,Julie,34,Female,5'2'',White,157.48,34-40
+29,Andrea,35,Female,5'3'',White,160.02,34-40
+30,Katie,39,Female,5'2'',White,157.48,34-40
+31,Shannon,38,Female,5'6'',White,167.64,34-40
+32,Elysa,37,Female,5'5'',White,165.1,34-40
+33,Meghan,34,Female,5'4'',White,162.56,34-40
+34,Rachel,34,Female,5'9'',White,175.26,34-40
+35,Katie,34,Female,5'7'',White,170.18,34-40
+36,Kira,35,Female,5'3'',White,160.02,34-40
+37,Ren,35,Female,5'3'',White,160.02,34-40
+38,Melissa,37,Female,5'7'',White,170.18,34-40
+39,Cheryle,36,Female,5'2'',White,157.48,34-40
+40,Lily,35,Female,5'1'',White,154.94,34-40
+41,Lori,37,Female,5'1'',White,154.94,34-40
+42,Kira,36,Female,6'0'',White,182.88,34-40
+43,Catherine,38,Female,5'2'',White,157.48,34-40
+44,Krista,34,Female,5'6'',White,167.64,34-40
+45,Becca,34,Female,5'1'',White,154.94,34-40
+46,Abby,36,Female,5'10'',White,177.8,34-40
+47,Lena,37,Female,5'4'',White,162.56,34-40
+48,Catherine,34,Female,5'8'',White,172.72,34-40
+49,Brittany,38,Female,5'3'',White,160.02,34-40
+50,Nikki,35,Female,5'3'',White,160.02,34-40
+51,Divine,35,Female,5'3'',Black,160.02,34-40
+52,Netta,35,Female,5'8'',Black,172.72,34-40
+53,Mich,34,Female,5'6'',Black,167.64,34-40
+54,Lisa,39,Female,5'10'',Black,177.8,34-40
+55,Kat ,39,Female,5'5'',Black,165.1,34-40
+56,Charlie,38,Female,5'5'',Black,165.1,34-40
+57,Whitney,36,Female,5'7'',Black,170.18,34-40
+58,Sheen,39,Female,5'5'',Black,165.1,34-40
+59,Taynia,36,Female,5'1'',Black,154.94,34-40
+60,Tahiti,35,Female,5'5'',Black,165.1,34-40
+61,Rashidah,35,Female,5'5'',Black,165.1,34-40
+62,Nicole,35,Female,5'4'',Black,162.56,34-40
+63,Kani,36,Female,5'8'',Black,172.72,34-40
+64,Cristy,35,Female,5'6'',Black,167.64,34-40
+65,Dee,39,Female,5'3'',Black,160.02,34-40
+66,Rose,35,Female,5'4'',Hispanic,162.56,34-40
+67,Rosa,37,Female,5'0'',Hispanic,152.4,34-40
+68,Andrea,36,Female,5'1'',Hispanic,154.94,34-40
+69,Catherine,38,Female,5'5'',Hispanic,165.1,34-40
+70,Yamilet,34,Female,5'5'',Hispanic,165.1,34-40
+71,Jas,39,Female,5'6'',Hispanic,167.64,34-40
+72,Araceli,34,Female,5'9'',Hispanic,175.26,34-40
+73,Yokauris,34,Female,5'0'',Hispanic,152.4,34-40
+74,Vivianna,38,Female,5'1'',Hispanic,154.94,34-40
+75,Julissa,36,Female,5'4'',Hispanic,162.56,34-40
+76,Paola,35,Female,5'0'',Hispanic,152.4,34-40
+77,Ada,36,Female,5'4'',Hispanic,162.56,34-40
+78,Crystal,38,Female,5'10'',Hispanic,177.8,34-40
+79,Melissa,36,Female,4'11'',Hispanic,149.86,34-40
+80,Angie,38,Female,5'2'',Hispanic,157.48,34-40
+81,Gloria,36,Female,5'0'',East Asian,152.4,34-40
+82,Tahirih,36,Female,5'2'',Southeast Asian,157.48,34-40
+83,Shreya,37,Female,5'2'',Southeast Asian,157.48,34-40
+84,Sonyta,37,Female,5'2'',East Asian,157.48,34-40
+85,Sneha,36,Female,5'5'',South Asian,165.1,34-40
+86,Jennie,38,Female,5'8'',East Asian,172.72,34-40
+87,Priya,35,Female,5'3'',South Asian,160.02,34-40
+88,Felecia,38,Female,5'4'',Southeast Asian,162.56,34-40
+89,Ume,36,Female,5'2'',East Asian,157.48,34-40
+90,Stephanie,38,Female,5'2'',East Asian,157.48,34-40
+91,Saumya,35,Female,5'8'',East Asian,172.72,34-40
+92,Jane,34,Female,5'5'',East Asian,165.1,34-40
+93,Persia,38,Female,5'7'',Middle Eastern,170.18,34-40
+94,Siqin,35,Female,5'3'',East Asian,160.02,34-40
+95,Jo ,34,Female,5'4'',East Asian,162.56,34-40
+96,V,34,Female,4'0'',Southeast Asian,121.92,34-40
+97,Carol,34,Female,5'2'',Middle Eastern,157.48,34-40
+98,Judy,34,Female,5'5'',East Asian,165.1,34-40
+99,Daniela,34,Female,5'2'',East Asian,157.48,34-40
+100,Sang,35,Female,5'9'',Southeast Asian,175.26,34-40
+1,Liz,44,Female,5'6'',White,167.64,40+
+2,Christie,46,Female,5'0'',White,152.4,40+
+3,Meg,41,Female,5'4'',White,162.56,40+
+4,Lauren,48,Female,5'7'',White,170.18,40+
+5,Alyssa,40,Female,5'4'',White,162.56,40+
+6,Deeana,43,Female,5'5'',White,165.1,40+
+7,Mari,57,Female,5'6'',White,167.64,40+
+8,Maria,44,Female,5'4'',White,162.56,40+
+9,Laura,40,Female,6'1'',White,185.42,40+
+10,Lucy,44,Female,5'4'',White,162.56,40+
+11,Marina,51,Female,5'2'',White,157.48,40+
+12,Phaedra,56,Female,5'7'',White,170.18,40+
+13,AnaLise,44,Female,5'7'',White,170.18,40+
+14,Jess,40,Female,5'4'',White,162.56,40+
+15,Jen,47,Female,5'6'',White,167.64,40+
+16,Ski,57,Female,5'10'',White,177.8,40+
+17,Brigid,41,Female,5'8'',White,172.72,40+
+18,Christy,54,Female,5'4'',White,162.56,40+
+19,Lindsay,43,Female,5'10'',White,177.8,40+
+20,Kimberly,57,Female,5'6'',White,167.64,40+
+21,Robyn,41,Female,5'0'',White,152.4,40+
+22,Vj,40,Female,5'0'',White,152.4,40+
+23,Tammy,54,Female,5'5'',White,165.1,40+
+24,Leslie,55,Female,5'9'',White,175.26,40+
+25,Mairead,40,Female,5'5'',White,165.1,40+
+26,Heather,47,Female,5'4'',White,162.56,40+
+27,Laura,40,Female,5'11'',White,180.34,40+
+28,Libby,51,Female,5'4'',White,162.56,40+
+29,Trae,55,Female,5'5'',White,165.1,40+
+30,Farah,40,Female,5'8'',White,172.72,40+
+31,Kathleen,47,Female,5'4'',White,162.56,40+
+32,Kelli,40,Female,5'3'',White,160.02,40+
+33,Anna,43,Female,5'5'',White,165.1,40+
+34,LP,58,Female,5'6'',White,167.64,40+
+35,Caitlin,40,Female,5'4'',White,162.56,40+
+36,Riina,41,Female,5'3'',White,160.02,40+
+37,Katrina,44,Female,5'9'',White,175.26,40+
+38,Zoe,41,Female,5'4'',White,162.56,40+
+39,Emily,43,Female,5'8'',White,172.72,40+
+40,Laurie,58,Female,5'1'',White,154.94,40+
+41,Jess,50,Female,5'5'',White,165.1,40+
+42,N@,43,Female,5'8'',White,172.72,40+
+43,Jennifer,51,Female,5'8'',White,172.72,40+
+44,Mary,42,Female,5'6'',White,167.64,40+
+45,Karla,42,Female,5'6'',White,167.64,40+
+46,Crecia,49,Female,5'4'',White,162.56,40+
+47,Kellye,61,Female,5'7'',White,170.18,40+
+48,Jennifer,46,Female,5'0'',White,152.4,40+
+49,Emily,40,Female,5'4'',White,162.56,40+
+50,Ann ,46,Female,5'7'',White,170.18,40+
+51,Lisa,41,Female,5'6'',White,167.64,40+
+52,Andrea,54,Female,5'2'',White,157.48,40+
+53,Annie,51,Female,5'3'',White,160.02,40+
+54,Christine,48,Female,5'3'',White,160.02,40+
+55,Lynne,40,Female,5'4'',Black,162.56,40+
+56,Pru,56,Female,5'6'',Black,167.64,40+
+57,Deshawn,42,Female,5'4'',Black,162.56,40+
+58,Viola R,60,Female,5'5'',Black,165.1,40+
+59,Joy,43,Female,5'2'',Black,157.48,40+
+60,Brigyte,46,Female,5'2'',Black,157.48,40+
+61,Jennifer,48,Female,5'9'',Black,175.26,40+
+62,Nirvana,44,Female,6'1'',Black,185.42,40+
+63,Shem,41,Female,5'2'',Black,157.48,40+
+64,KB,43,Female,5'6'',Black,167.64,40+
+65,Jayteon,43,Female,5'5'',Black,165.1,40+
+66,Denise,48,Female,5'7'',Hispanic,170.18,40+
+67,Essie,50,Female,5'7'',Hispanic,170.18,40+
+68,Nelida,43,Female,5'3'',Hispanic,160.02,40+
+69,Valentina,44,Female,5'1'',Hispanic,154.94,40+
+70,Cecy,53,Female,5'2'',Hispanic,157.48,40+
+71,Issa,41,Female,5'4'',Hispanic,162.56,40+
+72,Andy,42,Female,5'3'',Hispanic,160.02,40+
+73,Kiki,48,Female,5'8'',Hispanic,172.72,40+
+74,Jasmin,42,Female,5'5'',Hispanic,165.1,40+
+75,Kimberly,51,Female,5'2'',Hispanic,157.48,40+
+76,Tania,47,Female,5'3'',Hispanic,160.02,40+
+77,Lu ,42,Female,5'7'',Hispanic,170.18,40+
+78,Olly,41,Female,5'8'',Hispanic,172.72,40+
+79,Larissa,47,Female,5'1'',Hispanic,154.94,40+
+80,Carinna,43,Female,5'1'',Hispanic,154.94,40+
+81,Miss,43,Female,5'2'',Pacific Islander,157.48,40+
+82,Rie,41,Female,5'2'',Southeast Asian,157.48,40+
+83,Carol,49,Female,5'0'',Southeast Asian,152.4,40+
+84,Jennifer,54,Female,5'6'',Middle Eastern,167.64,40+
+85,Gabby,42,Female,5'0'',Southeast Asian,152.4,40+
+86,Sung,47,Female,5'4'',East Asian,162.56,40+
+87,Rose,40,Female,5'6'',East Asian,167.64,40+
+88,Jean,41,Female,5'7'',Native American,170.18,40+
+89,Zola,43,Female,5'7'',Middle Eastern,170.18,40+
+90,Amanda,41,Female,5'6'',East Asian,167.64,40+
+91,Ultra,52,Female,5'4'',Southeast Asian,162.56,40+
+92,Vivian,41,Female,5'0'',East Asian,152.4,40+
+93,Zinnia,43,Female,5'2'',East Asian,157.48,40+
+94,Yasmine,40,Female,5'6'',East Asian,167.64,40+
+95,Meera,43,Female,5'1'',Southeast Asian,154.94,40+
+96,Deena,56,Female,5'5'',Southeast Asian,165.1,40+
