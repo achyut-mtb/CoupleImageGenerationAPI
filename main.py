@@ -5,7 +5,7 @@ from pydantic import BaseModel
 from typing import Optional
 
 from CoupleImageGenerator import CoupleImageGenerator  # <-- your class file
-from config import CONFIG
+from config import Config
 
 
 # =============================
@@ -14,18 +14,18 @@ from config import CONFIG
 app = FastAPI(title="Couple Image Generator API", version="1.0")
 
 # Initialize generator (load models once!)
-generator = CoupleImageGenerator(api_key=CONFIG["API_KEY"])
+generator = CoupleImageGenerator(api_key=Config.API_KEY)
 
 # =============================
 # Request Model
 # =============================
 class CoupleRequest(BaseModel):
     pair_label: str
-    man_image_path: str
-    woman_image_path: str
+    p1_image_path: str
+    p2_image_path: str
     type_couple: str = "straight"  # "straight" | "gay" | "lesbian" | "trans"
-    man_height_cm: float
-    woman_height_cm: float
+    p1_height_cm: float
+    p2_height_cm: float
     background_desc: Optional[str] = "A simple plain background"
     background_light: Optional[str] = "Daylight, light source present in front of persons"
     pose_image_path: Optional[str] = "pose_images/couple_pose.jpg"
@@ -48,10 +48,10 @@ def process_generation(req: CoupleRequest):
         status = generator.generate_couple_photo(
             pair_label=req.pair_label,
             type_couple=req.type_couple,
-            man_single_img_path=req.man_image_path,
-            woman_single_img_path=req.woman_image_path,
-            man_height_cm=req.man_height_cm,
-            woman_height_cm=req.woman_height_cm,
+            p1_img_path=req.p1_image_path,
+            p2_img_path=req.p2_image_path,
+            p1_height_cm=req.p1_height_cm,
+            p2_height_cm=req.p2_height_cm,
             pose_image_path=req.pose_image_path
         )
 
@@ -77,10 +77,10 @@ async def generate_couple(req: CoupleRequest, background_tasks: BackgroundTasks)
         status = generator.generate_couple_photo(
             pair_label=req.pair_label,
             type_couple=req.type_couple,
-            man_single_img_path=req.man_image_path,
-            woman_single_img_path=req.woman_image_path,
-            man_height_cm=req.man_height_cm,
-            woman_height_cm=req.woman_height_cm,
+            p1_img_path=req.p1_image_path,
+            p2_img_path=req.p2_image_path,
+            p1_height_cm=req.p1_height_cm,
+            p2_height_cm=req.p2_height_cm,
             pose_image_path=req.pose_image_path
         )
 

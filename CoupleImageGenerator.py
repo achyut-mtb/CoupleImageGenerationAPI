@@ -26,10 +26,11 @@ from itertools import permutations
 
 from PoseExtractor import PoseExtractor
 from CoupleImagePostprocessor import CoupleImagePostprocessor
+from FaceProcessor import FaceProcessor
 
 from utils import cm_to_feet_inches, _pil_to_part, enforce_aspect
 
-from config import CONFIG
+from config import Config
 
 import time
 
@@ -42,63 +43,25 @@ class CoupleImageGenerator:
         use_cpu=True,
         male_csv="resources/Hinge_Profile_Data - Combined - Male.csv",
         female_csv="resources/Hinge_Profile_Data - Combined - Female.csv",
-        prompts_dir=CONFIG["PROMPTS_DIR"]
+        prompts_dir=Config.PROMPTS_DIR
     ):
         self.client = genai.Client(api_key=api_key)
 
         self.prompts_dir = prompts_dir
 
-        ctx_id = -1 if use_cpu else 0
-        self.app = insightface.app.FaceAnalysis(name="buffalo_l", providers=list(providers))
-        self.app.prepare(ctx_id=ctx_id, det_size=(640, 640))
-        self.arcface = insightface.model_zoo.get_model(CONFIG["ARCFACE_MODEL_PATH"], providers=list(providers))
-        self.arcface.prepare(ctx_id=ctx_id)
-        self.swapper = insightface.model_zoo.get_model(CONFIG["INSWAPPER_MODEL_PATH"], providers=list(providers))
-
+        ## pose extractor 
         self.pose_extractor = PoseExtractor()
 
         ## postprocessor
         self.postprocessor = CoupleImagePostprocessor(api_key=api_key)
 
+        ## face processor
+        self.face_processor = FaceProcessor(providers=providers, use_cpu=use_cpu)
+
         # CSVs (for height/ethnicity)
         self.male_csv = pd.read_csv(male_csv) if os.path.exists(male_csv) else pd.DataFrame()
         self.female_csv = pd.read_csv(female_csv) if os.path.exists(female_csv) else pd.DataFrame()
-
-        os.makedirs("resources/canvas", exist_ok=True)
-
-
-    # ---------------- Utility Functions ---------------- #
-    def get_embedding(self, face, img):
-        face_img = face_align.norm_crop(img, landmark=face.kps).astype(np.uint8)
-        emb = self.arcface.get_feat([face_img])[0]
-        return emb / np.linalg.norm(emb)
-
-    def match_faces(self, faces_target, ref1_img, ref2_img, ref1_face, ref2_face, target_img, min_sim=0.25):
-        if len(faces_target) < 2:
-            print("⚠️ Less than 2 faces detected in target. Cannot guarantee 1-to-1 match.")
-            return {}
-        ref1_emb = self.get_embedding(ref1_face, ref1_img)
-        ref2_emb = self.get_embedding(ref2_face, ref2_img)
-        target_embs = [self.get_embedding(tf, target_img) for tf in faces_target]
-
-        sims = np.array([
-            [np.dot(ref1_emb, t_emb) for t_emb in target_embs],
-            [np.dot(ref2_emb, t_emb) for t_emb in target_embs],
-        ])
-
-        best_assignment, best_score = None, -1e9
-        for perm in permutations(range(len(faces_target)), 2):
-            score = sims[0, perm[0]] + sims[1, perm[1]]
-            if score > best_score:
-                best_score = score
-                best_assignment = {"person1": perm[0], "person2": perm[1]}
-
-        # if best_assignment is not None:
-        #     if sims[0, best_assignment["person1"]] < min_sim or sims[1, best_assignment["person2"]] < min_sim:
-        #         print("⚠️ Similarity too low for reliable assignment. Skipping enforced mapping.")
-        #         return {}
-        return best_assignment or {}
-
+                
 
     # Simplified: pull by "Sl. no." only  === NEW ===
     def get_height_ethnicity_by_id(self, gender: str, slno) -> tuple:
@@ -122,7 +85,7 @@ class CoupleImageGenerator:
         ethnicity = r["Ethnicity"] if "Ethnicity" in r and pd.notna(r["Ethnicity"]) else "Not Known"
         return height_cm, ethnicity
 
-    def get_prompts(self, type_couple, man_height_cm, woman_height_cm, background_desc, background_light):
+    def get_prompts(self, type_couple, p1_height_cm, p2_height_cm, background_desc, background_light):
 
         try:
             ## load system prompt 
@@ -138,8 +101,8 @@ class CoupleImageGenerator:
             with open(prompt_filename, "r") as f:
                 prompt = f.read()
 
-            prompt = prompt.replace("{{first_person_height_cm}}", str(man_height_cm))
-            prompt = prompt.replace("{{second_person_height_cm}}", str(woman_height_cm))
+            prompt = prompt.replace("{{first_person_height_cm}}", str(p1_height_cm))
+            prompt = prompt.replace("{{second_person_height_cm}}", str(p2_height_cm))
             prompt = prompt.replace("{{background_desc}}", str(background_desc))
             prompt = prompt.replace("{{background_light}}", str(background_light))
 
@@ -153,18 +116,18 @@ class CoupleImageGenerator:
         self,
         temp_dir="temp",
         pair_label="pair",
-        pose_image_path = CONFIG["POSE_IMAGE_PATH"],
+        pose_image_path = Config.POSE_IMAGE_PATH,
         canvas_width=1024,
         canvas_height=2200,
         fov_v_deg=40.0,
         depth_m=3.0,
         overlap_ratio=0.06,
-        man_single_img_path=None,
-        woman_single_img_path=None,
+        p1_img_path=None,
+        p2_img_path=None,
         background_desc="A simple plain background",
         background_light="Daylight, light source present in front of persons",
-        man_height_cm="Not given, estimate from photo",
-        woman_height_cm="Not given, estimate from photo",
+        p1_height_cm="Not given, estimate from photo",
+        p2_height_cm="Not given, estimate from photo",
         type_couple="straight" ## -- VALUES: ["straight", "lesbian", "gay"]
     ):
         
@@ -172,10 +135,10 @@ class CoupleImageGenerator:
             Arguments: 
                 1. temp_dir: A root directory in which new directory will be created to store temporary files 
                 2. pair_label: A unique identifier for pair 
-                3. man_single_img_path: Path of first person's image 
-                4. woman_single_img_path: Path of second person's image 
-                5. man_height_cm: Height of first person
-                6. woman_height_cm: Height of second person
+                3. p1_img_path: Path of first person's image 
+                4. p2_img_path: Path of second person's image 
+                5. p1_height_cm: Height of first person
+                6. p2_height_cm: Height of second person
                 7. background_desc: Type of background needs to be in couple photo
                 8. background_light: In what lightning condition, persons should be present
                 9. type_couple: Is couple: straight, gay, lesbian or trans ?? 
@@ -186,29 +149,26 @@ class CoupleImageGenerator:
             os.makedirs(pair_dir, exist_ok=True)
 
             print("Loading images .. ")
-            print(man_single_img_path, woman_single_img_path, end='\n')
-
-            # === Identity reference (full.jpg) ===
-            # man_img   = cv2.imread(os.path.join(men_dir, "full.jpg"))
-            # woman_img = cv2.imread(os.path.join(women_dir, "full.jpg"))
+            print(p1_img_path, p2_img_path, end='\n')
 
             start = time.time()
-            man_img = cv2.imread(man_single_img_path)
-            woman_img = cv2.imread(woman_single_img_path)
+            p1_img = cv2.imread(p1_img_path)
+            p2_img = cv2.imread(p2_img_path)
 
             print("Time taken in image loading:", (time.time()-start))
 
-            if man_img is None or woman_img is None:
+            if p1_img is None or p2_img is None:
                 raise RuntimeError("Missing full.jpg in men/women dirs")
 
 
             print("Getting face ..")
 
-            man_faces = self.app.get(man_img)
-            woman_faces = self.app.get(woman_img)
-            if not man_faces or not woman_faces:
+            p1_faces = self.face_processor.get_detected_faces(p1_img)
+            p2_faces = self.face_processor.get_detected_faces(p2_img)
+
+            if not p1_faces or not p2_faces:
                 raise RuntimeError("No face detected in reference images")
-            man_face, woman_face = man_faces[0], woman_faces[0]
+            p1_face, p2_face = p1_faces[0], p2_faces[0]
 
             # print("Time taken till face detection:", (time.time()-start))
 
@@ -216,18 +176,18 @@ class CoupleImageGenerator:
             pose_path = os.path.join(pair_dir, "pose_skeleton.png")
             # pose_img = self.pose_extractor.extract_skeleton_pose(pose_image_path, pose_path)
 
-            if type(man_height_cm) == str:
-                man_height_cm = 170
+            if type(p1_height_cm) == str:
+                p1_height_cm = 170
 
-            if type(woman_height_cm) == str: 
-                woman_height_cm = 170
+            if type(p2_height_cm) == str: 
+                p2_height_cm = 170
 
             print("Extracting pose .. ")
 
             pose_img = self.pose_extractor.extract_and_scale_pose(pose_image_path, 
                                                                   pose_path, 
-                                                                  man_height_cm=man_height_cm,
-                                                                  woman_height_cm=woman_height_cm)
+                                                                  man_height_cm=p1_height_cm,
+                                                                  woman_height_cm=p2_height_cm)
 
             # pose_img = self.pose_extractor.get_openpose_skeleton(pose_image_path, pose_path)
 
@@ -237,8 +197,8 @@ class CoupleImageGenerator:
             print("Loading prompt .. ")
 
             prompt, system_prompt = self.get_prompts(type_couple,
-                                                     man_height_cm,
-                                                     woman_height_cm,
+                                                     p1_height_cm,
+                                                     p2_height_cm,
                                                      background_desc,
                                                      background_light)
             
@@ -253,8 +213,8 @@ class CoupleImageGenerator:
 
             parts = [
                 types.Part(text=prompt),
-                _pil_to_part(Image.open(man_single_img_path)),
-                _pil_to_part(Image.open(woman_single_img_path)),
+                _pil_to_part(Image.open(p1_img_path)),
+                _pil_to_part(Image.open(p2_img_path)),
                 _pil_to_part(Image.open(pose_path))
             ]
 
@@ -262,7 +222,7 @@ class CoupleImageGenerator:
 
             contents = [types.Content(role="user", parts=parts)]
             response = self.client.models.generate_content(
-                model=CONFIG["IMAGE_GEN_MODEL_NAME"],
+                model=Config.IMAGE_GEN_MODEL_NAME,
                 contents=contents,
                 config=generate_content_config
             )
@@ -288,24 +248,22 @@ class CoupleImageGenerator:
 
             # === Step 6: Face swap ===
             target = pre_swapping.copy()
-            faces_target = self.app.get(target)
+            faces_target = self.face_processor.get_detected_faces(target)
             print("Number of faces: ", len(faces_target))
 
             if len(faces_target) >= 2:
-                match = self.match_faces(faces_target, man_img, woman_img, man_face, woman_face, target)
-                print("Matches:", match)
+                target = self.face_processor.apply_face_swap(target,
+                                                             faces_target,
+                                                             p1_img,
+                                                             p2_img, 
+                                                             p1_face,
+                                                             p2_face)
+                
+                if target is None: ## if face swap is unsuccessful
+                    return False
 
-                if "person1" in match:
-                    try:
-                        target = self.swapper.get(target, faces_target[match["person1"]], man_face, paste_back=True)
-                    except Exception as e:
-                        print(f"⚠️ Man swap failed: {e}")
-
-                if "person2" in match:
-                    try:
-                        target = self.swapper.get(target, faces_target[match["person2"]], woman_face, paste_back=True)
-                    except Exception as e:
-                        print(f"⚠️ Woman swap failed: {e}")
+            else: ## if two persons are not in the output image, return false for retry 
+                return False
 
             # print("Time taken till face swap:", (time.time()-start))
 
@@ -343,15 +301,3 @@ class CoupleImageGenerator:
         except Exception as e:
             print(f"Error in generate_couple_photo: {e}")
             return False
-
-if __name__ == "__main__":
-
-
-    person_dir = "Set_2_body_face/Men/18-22/1/"
-    role_label = "man"
-    person_id = 1
-    man_height_cm = 170
-    ethnicity = "American"
-    use_pose = False
-
-    api_key = "AIzaSyBlNNUl7RYCx1jsWL8WLOQa-7CAVP2_4X4"

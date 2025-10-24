@@ -9,7 +9,7 @@ from google.genai import types
 
 from utils import _pil_to_part
 
-from config import CONFIG
+from config import Config
 
 class CoupleImagePostprocessor:
 
@@ -24,7 +24,7 @@ class CoupleImagePostprocessor:
 
         ### load prompt
         prompt = ""
-        with open(os.path.join(CONFIG["PROMPTS_DIR"], "couple_image_postprocessing_prompt.txt"), 'r') as f:
+        with open(os.path.join(Config.PROMPTS_DIR, "couple_image_postprocessing_prompt.txt"), 'r') as f:
             prompt = f.read()
 
         prompt = prompt.replace("[[background_desc]]", background_desc)
@@ -61,7 +61,7 @@ class CoupleImagePostprocessor:
         ankle_y = int(max(left_ankle_y, right_ankle_y))
 
         # # Remove small margin (5% of height) if needed
-        ankle_y = min(ankle_y - int(CONFIG["ANKLE_MARGIN"] * h), h)
+        ankle_y = min(ankle_y - int(Config.ANKLE_MARGIN * h), h)
 
         return ankle_y
     
@@ -70,8 +70,8 @@ class CoupleImagePostprocessor:
                                            input_path, 
                                            output_path,
                                            canvas_size=(1800, 2400),
-                                           headspace_ratio=CONFIG["HEADSPACE_VALUE"],
-                                           bottom_ratio=CONFIG["BOTTOMSPACE_VALUE"]):
+                                           headspace_ratio=Config.HEADSPACE_VALUE,
+                                           bottom_ratio=Config.BOTTOMSPACE_VALUE):
         
         """
         Uses rembg + PIL to remove background, then creates a new
@@ -171,7 +171,7 @@ class CoupleImagePostprocessor:
             print(f"Generating background for {inp_path}...")
 
             response = self.client.models.generate_content(
-                model=CONFIG["IMAGE_GEN_MODEL_NAME"],
+                model=Config.IMAGE_GEN_MODEL_NAME,
                 contents=[prompt, image],
             )
 
