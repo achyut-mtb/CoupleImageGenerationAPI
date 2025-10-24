@@ -45,7 +45,7 @@ class CoupleResponse(BaseModel):
 # =============================
 def process_generation(req: CoupleRequest):
     try:
-        pre, final, man, woman, pose_path = generator.generate_couple_photo(
+        status = generator.generate_couple_photo(
             pair_label=req.pair_label,
             type_couple=req.type_couple,
             man_single_img_path=req.man_image_path,
@@ -55,7 +55,7 @@ def process_generation(req: CoupleRequest):
             pose_image_path=req.pose_image_path
         )
 
-        if final is None:
+        if not status:
             print("⚠️ Generation failed.")
         else:
             print(f"✅ Couple image generated for {req.pair_label}")

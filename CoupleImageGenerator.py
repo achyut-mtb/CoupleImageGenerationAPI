@@ -31,6 +31,8 @@ from utils import cm_to_feet_inches, _pil_to_part, enforce_aspect
 
 from config import CONFIG
 
+import time
+
 class CoupleImageGenerator:
 
     def __init__(
@@ -189,8 +191,12 @@ class CoupleImageGenerator:
             # === Identity reference (full.jpg) ===
             # man_img   = cv2.imread(os.path.join(men_dir, "full.jpg"))
             # woman_img = cv2.imread(os.path.join(women_dir, "full.jpg"))
+
+            start = time.time()
             man_img = cv2.imread(man_single_img_path)
             woman_img = cv2.imread(woman_single_img_path)
+
+            print("Time taken in image loading:", (time.time()-start))
 
             if man_img is None or woman_img is None:
                 raise RuntimeError("Missing full.jpg in men/women dirs")
@@ -203,6 +209,8 @@ class CoupleImageGenerator:
             if not man_faces or not woman_faces:
                 raise RuntimeError("No face detected in reference images")
             man_face, woman_face = man_faces[0], woman_faces[0]
+
+            # print("Time taken till face detection:", (time.time()-start))
 
             ### Pose map creation 
             pose_path = os.path.join(pair_dir, "pose_skeleton.png")
@@ -259,6 +267,8 @@ class CoupleImageGenerator:
                 config=generate_content_config
             )
 
+            # print("Time taken till first response generation:", (time.time()-start))
+
             pre_swapping = None
             for cand in getattr(response, "candidates", []):
                 for prt in cand.content.parts:
@@ -297,11 +307,15 @@ class CoupleImageGenerator:
                     except Exception as e:
                         print(f"⚠️ Woman swap failed: {e}")
 
+            # print("Time taken till face swap:", (time.time()-start))
+
             # Save
             preswapped_path = os.path.join(pair_dir, "raw_output.png")
             postswapped_path = os.path.join(pair_dir, "postswapped_output.png")
             cv2.imwrite(preswapped_path, pre_swapping)
             cv2.imwrite(postswapped_path, target)
+
+            # print("Time taken till image saving:", (time.time()-start))
 
 
             ### Postprocessing
@@ -309,6 +323,8 @@ class CoupleImageGenerator:
             ## Step 1 -- Centerally align people  --- ### 
             postprocessed_path = os.path.join(pair_dir, "postprocessed_output.png")
             status = self.postprocessor.align_person_center_with_headspace(postswapped_path, postprocessed_path)
+
+            # print("Time taken till step 1 postprocessing:", (time.time()-start))
 
             if not status:
                 raise RuntimeError("Some error in postprocessing .. ")
@@ -319,6 +335,8 @@ class CoupleImageGenerator:
 
             if not status:
                 raise RuntimeError("Some error in generating background .. ")
+            
+            # print("Time taken till step 2 postprocessing:", (time.time()-start))
         
             return True
 

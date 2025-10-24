@@ -166,6 +166,8 @@ class CoupleImagePostprocessor:
             prompt = self.load_prompt(background_desc=background_desc, 
                                       background_light=background_light)
             
+            print(prompt)
+            
             print(f"Generating background for {inp_path}...")
 
             response = self.client.models.generate_content(
