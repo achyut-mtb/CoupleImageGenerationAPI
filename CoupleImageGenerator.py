@@ -25,21 +25,22 @@ from typing import Optional, Tuple, Dict
 from itertools import permutations
 
 from PoseExtractor import PoseExtractor
+from CoupleImagePostprocessor import CoupleImagePostprocessor
 
 from utils import cm_to_feet_inches, _pil_to_part, enforce_aspect
+
+from config import CONFIG
 
 class CoupleImageGenerator:
 
     def __init__(
         self,
         api_key,
-        pose_dir="pose_images",
-        interests_csv="resources/Bgs - Interests - Image Descriptions.csv",
         providers=("CPUExecutionProvider",),
         use_cpu=True,
         male_csv="resources/Hinge_Profile_Data - Combined - Male.csv",
         female_csv="resources/Hinge_Profile_Data - Combined - Female.csv",
-        prompts_dir="prompts"
+        prompts_dir=CONFIG["PROMPTS_DIR"]
     ):
         self.client = genai.Client(api_key=api_key)
 
@@ -48,27 +49,14 @@ class CoupleImageGenerator:
         ctx_id = -1 if use_cpu else 0
         self.app = insightface.app.FaceAnalysis(name="buffalo_l", providers=list(providers))
         self.app.prepare(ctx_id=ctx_id, det_size=(640, 640))
-        self.arcface = insightface.model_zoo.get_model("models/w600k_r50.onnx", providers=list(providers))
+        self.arcface = insightface.model_zoo.get_model(CONFIG["ARCFACE_MODEL_PATH"], providers=list(providers))
         self.arcface.prepare(ctx_id=ctx_id)
-        self.swapper = insightface.model_zoo.get_model("models/inswapper_128.onnx", providers=list(providers))
+        self.swapper = insightface.model_zoo.get_model(CONFIG["INSWAPPER_MODEL_PATH"], providers=list(providers))
 
         self.pose_extractor = PoseExtractor()
-        self.pose_dir = pose_dir
-        self.last_valid_pose = None
-        self.last_pose_path = None
 
-        # Interests
-        self.interests = None
-        if os.path.exists(interests_csv):
-            try:
-                self.interests = pd.read_csv(interests_csv)
-            except Exception as e:
-                print(f"⚠️ Failed to load interests CSV: {e}")
-        if self.interests is None or "Image Description" not in (self.interests.columns if self.interests is not None else []):
-            self.interests = pd.DataFrame([{
-                "Image Description": "simple indoor studio background, soft gradient wall, neutral tones",
-                "Light": "soft, diffused, even lighting"
-            }])
+        ## postprocessor
+        self.postprocessor = CoupleImagePostprocessor(api_key=api_key)
 
         # CSVs (for height/ethnicity)
         self.male_csv = pd.read_csv(male_csv) if os.path.exists(male_csv) else pd.DataFrame()
@@ -163,7 +151,7 @@ class CoupleImageGenerator:
         self,
         temp_dir="temp",
         pair_label="pair",
-        pose_image_path = "pose_images/couple_image.jpg",
+        pose_image_path = CONFIG["POSE_IMAGE_PATH"],
         canvas_width=1024,
         canvas_height=2200,
         fov_v_deg=40.0,
@@ -266,7 +254,7 @@ class CoupleImageGenerator:
 
             contents = [types.Content(role="user", parts=parts)]
             response = self.client.models.generate_content(
-                model="gemini-2.5-flash-image",
+                model=CONFIG["IMAGE_GEN_MODEL_NAME"],
                 contents=contents,
                 config=generate_content_config
             )
@@ -310,16 +298,33 @@ class CoupleImageGenerator:
                         print(f"⚠️ Woman swap failed: {e}")
 
             # Save
-            raw_path = os.path.join(pair_dir, "raw_output.png")
-            final_path = os.path.join(pair_dir, "couple_final.png")
-            cv2.imwrite(raw_path, pre_swapping)
-            cv2.imwrite(final_path, target)
+            preswapped_path = os.path.join(pair_dir, "raw_output.png")
+            postswapped_path = os.path.join(pair_dir, "postswapped_output.png")
+            cv2.imwrite(preswapped_path, pre_swapping)
+            cv2.imwrite(postswapped_path, target)
 
-            return pre_swapping, target, man_img, woman_img, pose_path
+
+            ### Postprocessing
+            
+            ## Step 1 -- Centerally align people  --- ### 
+            postprocessed_path = os.path.join(pair_dir, "postprocessed_output.png")
+            status = self.postprocessor.align_person_center_with_headspace(postswapped_path, postprocessed_path)
+
+            if not status:
+                raise RuntimeError("Some error in postprocessing .. ")
+            
+            ## Step 2 -- Generate background -- ### 
+            final_path = os.path.join(pair_dir, "final_output.png")
+            status = self.postprocessor.generate_background(postprocessed_path, final_path, background_desc, background_light)
+
+            if not status:
+                raise RuntimeError("Some error in generating background .. ")
+        
+            return True
 
         except Exception as e:
             print(f"Error in generate_couple_photo: {e}")
-            return None, None, None, None, None
+            return False
 
 if __name__ == "__main__":
 

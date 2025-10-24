@@ -5,6 +5,8 @@ from pydantic import BaseModel
 from typing import Optional
 
 from CoupleImageGenerator import CoupleImageGenerator  # <-- your class file
+from config import CONFIG
+
 
 # =============================
 # Initialize FastAPI
@@ -12,7 +14,7 @@ from CoupleImageGenerator import CoupleImageGenerator  # <-- your class file
 app = FastAPI(title="Couple Image Generator API", version="1.0")
 
 # Initialize generator (load models once!)
-generator = CoupleImageGenerator(api_key=os.getenv("GEMINI_API_KEY"))
+generator = CoupleImageGenerator(api_key=CONFIG["API_KEY"])
 
 # =============================
 # Request Model
@@ -35,9 +37,7 @@ class CoupleRequest(BaseModel):
 class CoupleResponse(BaseModel):
     status: str
     message: str
-    raw_output_path: Optional[str] = None
     final_output_path: Optional[str] = None
-    pose_path: Optional[str] = None
 
 
 # =============================
@@ -74,7 +74,7 @@ async def generate_couple(req: CoupleRequest, background_tasks: BackgroundTasks)
     os.makedirs(pair_dir, exist_ok=True)
 
     try:
-        pre, final, man, woman, pose_path = generator.generate_couple_photo(
+        status = generator.generate_couple_photo(
             pair_label=req.pair_label,
             type_couple=req.type_couple,
             man_single_img_path=req.man_image_path,
@@ -84,18 +84,15 @@ async def generate_couple(req: CoupleRequest, background_tasks: BackgroundTasks)
             pose_image_path=req.pose_image_path
         )
 
-        if final is None:
+        if not status:
             raise HTTPException(status_code=500, detail="Image generation failed")
 
-        raw_path = os.path.join(pair_dir, "raw_output.png")
-        final_path = os.path.join(pair_dir, "couple_final.png")
+        final_path = os.path.join(pair_dir, "final_output.png")
 
         return CoupleResponse(
             status="success",
             message="Couple image generated successfully",
-            raw_output_path=raw_path,
-            final_output_path=final_path,
-            pose_path=pose_path
+            final_output_path=final_path
         )
 
     except Exception as e:
