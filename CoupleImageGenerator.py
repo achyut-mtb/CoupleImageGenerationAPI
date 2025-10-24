@@ -272,6 +272,18 @@ class CoupleImageGenerator:
             postswapped_path = os.path.join(pair_dir, "postswapped_output.png")
             cv2.imwrite(preswapped_path, pre_swapping)
             cv2.imwrite(postswapped_path, target)
+            
+            ### get left right information 
+            
+            faces_target = self.face_processor.get_detected_faces(target)
+            left_right_info = self.face_processor.get_left_right_information(target, 
+                                                                             faces_target, 
+                                                                             p1_img, 
+                                                                             p2_img,
+                                                                             p1_face, 
+                                                                             p2_face)
+            
+            print("Left right information:", left_right_info)
 
             # print("Time taken till image saving:", (time.time()-start))
 

@@ -92,11 +92,72 @@ class FaceProcessor:
         except:
             return None
         
-    def get_left_right_information(self, couple_image, ref1_face, ref2_face):
-        return {}
-
+    def get_left_right_information(self, target_img, faces_target, ref1_img, ref2_img, ref1_face, ref2_face, min_sim=0.25):
         
-    
+        """
+        Matches reference faces (person1, person2) to target faces using embeddings,
+        and then determines their relative position (left/right) in the target image.
+
+        Returns:
+            dict: A dictionary in the format {"left": "person1/person2", "right": "person1/person2"}.
+        """
+        if len(faces_target) < 2:
+            print("⚠️ Less than 2 faces detected in target. Cannot guarantee 1-to-1 match.")
+            return {}
         
+        # 1. Get Embeddings
+        # Assumes self.get_embedding returns a 1D numpy array (the face embedding)
+        ref1_emb = self.get_embedding(ref1_face, ref1_img)
+        ref2_emb = self.get_embedding(ref2_face, ref2_img)
+        target_embs = [self.get_embedding(tf, target_img) for tf in faces_target]
 
+        # 2. Calculate Similarities (Dot Product)
+        sims = np.array([
+            [np.dot(ref1_emb, t_emb) for t_emb in target_embs],
+            [np.dot(ref2_emb, t_emb) for t_emb in target_embs],
+        ])
 
+        # 3. Find Best Assignment using Permutations
+        best_assignment = None
+        best_score = -1e9
+        
+        # Iterate over all possible ways to assign ref1 and ref2 to two target faces
+        for perm in permutations(range(len(faces_target)), 2):
+            # perm[0] is the index of the target face assigned to ref1 (person1)
+            # perm[1] is the index of the target face assigned to ref2 (person2)
+            score = sims[0, perm[0]] + sims[1, perm[1]]
+            
+            if score > best_score:
+                best_score = score
+                best_assignment = {"person1_idx": perm[0], "person2_idx": perm[1]}
+
+        if not best_assignment:
+            return {}
+        
+        # 4. Determine Left/Right Position
+        
+        # Get indices of the target faces corresponding to person1 and person2
+        target_idx_p1 = best_assignment["person1_idx"]
+        target_idx_p2 = best_assignment["person2_idx"]
+        
+        # Get bounding boxes [x1, y1, x2, y2]
+        bbox_p1 = faces_target[target_idx_p1].bbox 
+        bbox_p2 = faces_target[target_idx_p2].bbox
+        
+        # Calculate the center X-coordinate for each face. Lower X is Left.
+        center_x_p1 = (bbox_p1[0] + bbox_p1[2]) / 2
+        center_x_p2 = (bbox_p2[0] + bbox_p2[2]) / 2
+
+        # Map the position to the person string
+        if center_x_p1 < center_x_p2:
+            left_person = "person1"
+            right_person = "person2"
+        else:
+            left_person = "person2"
+            right_person = "person1"
+
+        # 5. Return the final required output format
+        return {
+            "left": left_person, 
+            "right": right_person 
+        }
